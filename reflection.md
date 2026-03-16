@@ -9,6 +9,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   (for example: "the secret number kept changing" or "the hints were backwards").
 The hint were not good
 When starting a new game, it didnt let me submit
+The difficulty is wrong
 ---
 
 ## 2. How did you use AI as a teammate?

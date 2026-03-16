@@ -11,6 +11,8 @@ The hint were not good
 When starting a new game, it didnt let me submit
 The difficulty is wrong
 The update scoring was inconsistent
+  (for example: "the hints were backwards").
+
 ---
 
 ## 2. How did you use AI as a teammate?
@@ -44,6 +46,8 @@ The secret number kept changing because the app reruns the whole app everytime I
 Imagine you are playing a video game and everytime you make an interaction, the whole game crash and reset from start, it is a  Streamlit "reruns". A session state is a save file, that keep your progress even when your game reset.
 - What change did you make that finally gave the game a stable secret number?
 The change was to wrap the secret number in st.session_state, so the only way for it to generate a random number is when one doesn't exist
+- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+
 ---
 
 ## 5. Looking ahead: your developer habits

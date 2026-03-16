@@ -25,13 +25,24 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+  - A number guessing game built with Streamlit where the player must guess a secret number within a limited number of attempts.
+
+- [x] Detail which bugs you found.
+  - Hints were reversed (e.g., "Too High" said to go higher).
+  - The game would not reset properly (new games didn’t clear state and submission stopped working).
+  - The secret number would change between guesses because it wasn’t stored in session state.
+  - Scoring was inconsistent and sometimes increased on wrong guesses.
+
+- [x] Explain what fixes you applied.
+  - Corrected hint messages so "Too High" tells the player to go lower and vice versa.
+  - Used `st.session_state` to persist the secret number and game status across reruns, and reset state cleanly on a new game.
+  - Refactored logic into `logic_utils.py` and added tests for `check_guess` and `parse_guess`.
+  - Updated scoring logic so only correct guesses add points (scaled by attempt) and wrong guesses subtract a fixed penalty.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [x] [<img src = 'pic.png' title='picture' width='' alt='picture' />]
 
 ## 🚀 Stretch Features
 
